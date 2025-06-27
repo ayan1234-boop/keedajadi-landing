@@ -13,7 +13,7 @@ function App() {
 
       {/* Hero Section */}
       <section
-        className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 bg-cover bg-center"
+        className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div> {/* Darker overlay */}
