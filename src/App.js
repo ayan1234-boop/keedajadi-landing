@@ -18,7 +18,7 @@ function App() {
       >
         <div className="absolute inset-0 bg-black opacity-40 z-0"></div> {/* Dark overlay */}
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-100">Keeda Jadi –  from heights of the Himalayas </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-100">Keeda Jadi –  the himalyan viagra </h1>
           <p className="text-lg md:text-xl max-w-xl mb-6 text-white"></p>
           <a
             href="https://wa.me/919319267286?text=Hi, I want to buy Keeda Jadi"
