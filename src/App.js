@@ -1,7 +1,8 @@
-import bgImage from './assets/Keedajadibg2.jpg';
+import bgImage from './assets/Keedajadibg1.jpg';
 import WhatsApp from './assets/whatsapp_icon.png';
 import keedajadi from './assets/keedajadi.png';
 import check from './assets/check.png'
+
 
 function App() {
   return (
