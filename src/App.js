@@ -13,10 +13,13 @@ function App() {
 
       {/* Hero Section */}
       <section
-        className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${bgImage})` }}
+        className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: 'cover',
+        }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div> {/* Darker overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
         <div className="relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-100">Keeda Jadi – Nature’s Stamina Booster from the Himalayas</h1>
           <p className="text-lg md:text-xl max-w-xl mb-6 text-white"></p>
