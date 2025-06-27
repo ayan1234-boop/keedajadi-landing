@@ -16,9 +16,9 @@ function App() {
         className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-40 z-0"></div> {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div> {/* Darker overlay */}
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-100">Keeda Jadi –  the himalyan viagra </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-100">Keeda Jadi – Nature’s Stamina Booster from the Himalayas</h1>
           <p className="text-lg md:text-xl max-w-xl mb-6 text-white"></p>
           <a
             href="https://wa.me/919319267286?text=Hi, I want to buy Keeda Jadi"
@@ -87,7 +87,7 @@ function App() {
           {[
             {
               text: '“I’ve been taking Keeda Jadi for two weeks and I already feel more energetic!”',
-              name: 'James, Toronto',
+              name: 'Rohit, Delhi',
               img: 'https://randomuser.me/api/portraits/men/75.jpg'
             },
             {
@@ -102,7 +102,7 @@ function App() {
             },
             {
               text: '“Felt more active and energetic in just a week. Great product!”',
-              name: 'George, Los Angeles',
+              name: 'Ramesh, Jaipur',
               img: 'https://randomuser.me/api/portraits/men/66.jpg'
             },
             {
