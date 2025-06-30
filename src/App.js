@@ -8,12 +8,14 @@ import lungs from './assets/lungs.png';
 import ayurvedic from './assets/ayurvedic.png';
 import natural from './assets/natural.png';
 import couple from './assets/couple.png';
+import bottle from './assets/bottle.jpg'
+
 function App() {
   return (
     <div className="bg-white text-gray-800 font-sans relative">
       {/* Limited Time Offer Box */}
       <div className="bg-yellow-200 text-center py-3 px-4 text-sm font-semibold text-red-700">
-        🔥 Limited Time Offer: Flat ₹200 Off + Free Delivery! Order Now
+        🔥 Limited Time Offer: Flat ₹500 Off ! Order Now
       </div>
 
       {/* Hero Section */}
@@ -29,7 +31,7 @@ function App() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-500 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">Keeda Jadi – from the heights of Himalayas</h1>
           <p className="text-lg md:text-xl max-w-xl mb-6 text-white"></p>
           <a
-            href="https://wa.me/919319267286?text=Hi, I am interested in Keeda Jadi"
+            href="https://wa.me/919319267286?text=Hi, I want to buy Keeda Jadi"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-green-700 transition"
@@ -171,9 +173,15 @@ function App() {
       {/* WhatsApp CTA Again */}
       <section className="py-12 px-6 text-center bg-green-50">
         <h2 className="text-3xl font-semibold mb-4">Ready to Try Keeda Jadi?</h2>
+        {/* Bottle Image */}
+        <img
+          src={bottle}
+          alt="Keeda Jadi Bottle"
+          className="w-[30rem] h-auto mx-auto mb-6 rounded-xl shadow"
+        />
         <p className="mb-6 text-lg">Click below to order directly via WhatsApp. Limited stock available!</p>
         <a
-          href="https://wa.me/919319267286?text=Hi, I am interested in Keeda Jadi"
+          href="https://wa.me/919319267286?text=Hi, I want to buy Keeda Jadi"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-700 text-white px-6 py-3 rounded-xl shadow hover:bg-green-800 transition"
