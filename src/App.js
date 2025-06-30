@@ -1,8 +1,13 @@
 import bgImage from './assets/Keedajadibg1.jpg';
 import WhatsApp from './assets/whatsapp_icon.png';
 import keedajadi from './assets/keedajadi.png';
-import check from './assets/check.png'
-
+import check from './assets/check.png';
+import fit from './assets/fit.png';
+import immune from './assets/immunity.png';
+import lungs from './assets/lungs.png';
+import ayurvedic from './assets/ayurvedic.png';
+import natural from './assets/natural.png';
+import couple from './assets/couple.png';
 function App() {
   return (
     <div className="bg-white text-gray-800 font-sans relative">
@@ -19,9 +24,9 @@ function App() {
           backgroundSize: 'cover',
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-5 z-0"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
         <div className="relative z-10 ">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-100">Keeda Jadi – from the heights of Himalayas</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-500 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">Keeda Jadi – from the heights of Himalayas</h1>
           <p className="text-lg md:text-xl max-w-xl mb-6 text-white"></p>
           <a
             href="https://wa.me/919319267286?text=Hi, I want to buy Keeda Jadi"
@@ -51,28 +56,68 @@ function App() {
       {/* Benefits */}
       <section className="py-12 px-6 bg-gray-50 text-center">
         <h2 className="text-3xl font-semibold mb-8">Benefits of Keeda Jadi</h2>
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {[
-            'Increases Strength & Stamina',
-            'Boosts Immunity & Natural Defenses',
-            'Improves Lung Health & Breathing',
-            'Enhances Sexual Vitality',
-            '100% Natural – No Side Effects',
-            'Recommended in Ayurvedic Texts'
-          ].map((benefit, idx) => (
-            <div
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                text: 'Increases Strength & Stamina',
+                img: fit,
+              },
+              {
+                text: 'Boosts Immunity & Natural Defenses',
+                img: immune,
+              },
+              {
+                text: 'Improves Lung Health & Breathing',
+                img: lungs,
+              },
+              {
+                text: 'Enhances Sexual Vitality',
+                img: couple,
+              },
+              {
+                text: '100% Natural – No Side Effects',
+                img: natural,
+              },
+              {
+                text: 'Recommended in Ayurvedic Texts',
+                img: ayurvedic,
+              }
+            ].map((benefit, idx) => (
+          <div
               key={idx}
               className="bg-white p-6 rounded-xl shadow hover:shadow-md transition border flex flex-col items-center"
-            >
-              <img
-                src={check}
-                alt="Benefit icon"
-                className="w-12 h-12 object-contain mb-4"
-              />
-              <p className="text-base font-medium text-center">{benefit}</p>
-            </div>
+          >
+          <img
+            src={benefit.img}
+            alt="Benefit icon"
+            className="w-48 h-48 object-contain mb-4"
+          />
+        <p className="text-base font-medium text-center">{benefit.text}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-12 px-6 bg-green-50 text-center">
+        <h2 className="text-3xl font-semibold mb-6">Why Choose Us?</h2>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+            {[
+              '100% Natural – No Side Effects',
+              'Recommended in Ayurvedic Texts',
+              'Trusted by Thousands Across India',
+              'Ethically Sourced from the Himalayas',
+              'Cash on Delivery Available',
+              'Secure and Fast Delivery in 3–5 Days'
+            ].map((reason, idx) => (
+          <div
+            key={idx}
+            className="bg-white p-6 rounded-xl shadow border hover:shadow-md transition flex items-center justify-center text-center"
+          >
+            <p className="text-base font-medium">{reason}</p>
+          </div>
           ))}
-        </div>
+          </div>
       </section>
 
       {/* How to Use Section */}
@@ -90,7 +135,7 @@ function App() {
           {[
             {
               text: '“I’ve been taking Keeda Jadi for two weeks and I already feel more energetic!”',
-              name: 'Rohit, Delhi',
+              name: 'James, Los Angeles',
               img: 'https://randomuser.me/api/portraits/men/75.jpg'
             },
             {
@@ -105,7 +150,7 @@ function App() {
             },
             {
               text: '“Felt more active and energetic in just a week. Great product!”',
-              name: 'Ramesh, Jaipur',
+              name: 'George, Toronto',
               img: 'https://randomuser.me/api/portraits/men/66.jpg'
             },
             {
@@ -153,6 +198,10 @@ function App() {
             <h3 className="font-bold">How fast is delivery?</h3>
             <p>We deliver in 3–5 business days via trusted courier partners.</p>
           </div>
+          <div>
+            <h3 className="font-bold">How long does it take to produce results?</h3>
+            <p>You will have to take a full course of 3 months to get best results.</p>
+          </div>
         </div>
       </section>
 
@@ -168,9 +217,13 @@ function App() {
           href="https://wa.me/919319267286?text=Hi, I am interested in Keeda Jadi"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-green-700 font-semibold px-4 py-2 rounded-xl shadow hover:bg-gray-100 transition"
+          className="bg-green text-green-700 font-semibold px-4 py-2 rounded-xl shadow hover:bg-gray-100 transition"
         >
-          WhatsApp Us
+          <img
+          src={WhatsApp}
+          alt="WhatsApp"
+          className="w-12 h-12"
+        />
         </a>
       </div>
 
