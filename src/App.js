@@ -29,7 +29,7 @@ function App() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-500 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">Keeda Jadi – from the heights of Himalayas</h1>
           <p className="text-lg md:text-xl max-w-xl mb-6 text-white"></p>
           <a
-            href="https://wa.me/919319267286?text=Hi, I want to buy Keeda Jadi"
+            href="https://wa.me/919319267286?text=Hi, I am interested in Keeda Jadi"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-green-700 transition"
