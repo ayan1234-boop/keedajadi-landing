@@ -173,7 +173,7 @@ function App() {
         <h2 className="text-3xl font-semibold mb-4">Ready to Try Keeda Jadi?</h2>
         <p className="mb-6 text-lg">Click below to order directly via WhatsApp. Limited stock available!</p>
         <a
-          href="https://wa.me/919319267286?text=Hi, I want to buy Keeda Jadi"
+          href="https://wa.me/919319267286?text=Hi, I am interested in Keeda Jadi"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-700 text-white px-6 py-3 rounded-xl shadow hover:bg-green-800 transition"
