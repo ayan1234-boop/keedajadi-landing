@@ -29,7 +29,7 @@ function App() {
       >
         <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
         <div className="relative z-10 ">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-green-500 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">कीड़ा जड़ी – हिमालय की ऊँचाइयों से</h1>
+          <h1 className="inline-block bg-black bg-opacity-90 text-4xl md:text-6xl font-bold mb-4 text-green-500 px-6 py-4 rounded-lg drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">कीड़ा जड़ी – हिमालय की ऊँचाइयों से</h1>
           <p className="text-lg md:text-xl max-w-xl mb-6 text-white"></p>
           <a
             href="https://wa.me/919319267286?text=Hi, I want to buy Keeda Jadi"
