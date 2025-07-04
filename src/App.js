@@ -8,7 +8,7 @@ import lungs from './assets/lungs.png';
 import ayurvedic from './assets/ayurvedic.png';
 import natural from './assets/natural.png';
 import couple from './assets/couple.png';
-import bottle from './assets/bottle.jpg';
+import bottle from './assets/bottle.png';
 import CallIcon from './assets/call.png';
 
 function App() {
