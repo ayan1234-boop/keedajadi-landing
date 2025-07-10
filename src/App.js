@@ -10,8 +10,28 @@ import natural from './assets/natural.png';
 import couple from './assets/couple.png';
 import bottle from './assets/bottle.png';
 import CallIcon from './assets/call.png';
-
+import { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    const startTime = Date.now();
+
+    const handleUnload = () => {
+      const endTime = Date.now();
+      const timeSpent = Math.round((endTime - startTime) / 1000);
+
+      if (window.fbq) {
+        window.fbq('trackCustom', 'TimeOnPage', {
+          time_spent_seconds: timeSpent
+        });
+      }
+    };
+
+    window.addEventListener('beforeunload', handleUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleUnload);
+    };
+  }, []);
   return (
     <div className="bg-white text-gray-800 font-sans relative">
       {/* सीमित समय ऑफर बॉक्स */}
